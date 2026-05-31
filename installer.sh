@@ -5,7 +5,7 @@ echo "[1/4] Starting USBian installation..."
 mkdir -p tmp_blocks
 for i in {00..41}; do
     echo "[INFO] Downloading block $i..."
-    wget -q "https://github.com/voyem/USBian/releases/download/v1.0/debian_part_$i" -O "tmp_blocks/part_$i"
+    wget -q "https://github.com/voyem/USBian/releases/download/Blocks/debian_part_$i" -O "tmp_blocks/part_$i"
 done
 echo "[2/4] Joining blocks..."
 cat tmp_blocks/part_* > USBian.img.gz
