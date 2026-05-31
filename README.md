@@ -1,4 +1,4 @@
-# Do not use the ps1 installer as it is not digitally signed and your powershell terminal will most likely block the downloads!
+# please don't use this yet, the installer for some reason installed 31gb of empty space and I have no idea how to fix it
 
 # USBian: Universal Debian Persistence USB
 
