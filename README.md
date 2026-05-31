@@ -26,16 +26,6 @@ The script will:
 1.  Help you identify your USB drive.
 2.  Let you choose between **Lite** (CLI only) and **Base** (XFCE Desktop).
 3.  Automatically download the ISO, flash it, and configure persistence.
-### Windows Setup (Graphical Wizard)
-
-> **⚠️ SECURITY WARNING:** This installer requires administrative privileges to format and write to USB drives. Because it is a custom-compiled application, Windows SmartScreen may flag it as "unrecognized." You can verify the source code (`gui_installer.go`) in this repository.
-
-1.  Download `USBian_Installer.exe` from this repository.
-...
-2.  Run the installer. It features a user-friendly **Graphical Setup Wizard**.
-3.  Select your USB drive and click **Start Installation**.
-4.  The wizard will automatically download, verify, and reassemble the system image for you.
-5.  Once ready, use **Rufus** or **BalenaEtcher** to flash the resulting `USBian_Restore.img.gz` to your drive.
 
 ---
 
