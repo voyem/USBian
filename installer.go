@@ -9,7 +9,7 @@ import (
 )
 
 const (
-	ghUser     = "your-github-username"
+	ghUser     = "voyem"
 	ghRepo     = "USBian"
 	releaseTag = "v1.0"
 	numBlocks  = 42
