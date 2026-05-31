@@ -25,11 +25,13 @@ The script will:
 2.  Let you choose between **Lite** (CLI only) and **Base** (XFCE Desktop).
 3.  Automatically download the ISO, flash it, and configure persistence.
 
-### Windows Setup
+### Windows Setup (Graphical Wizard)
 
 1.  Download `USBian_Installer.exe` from this repository.
-2.  Run the `.exe`. It will download the necessary system blocks and reassemble the image.
-3.  Once the image (`USBian_Restore.img.gz`) is ready, use a tool like **Rufus** or **BalenaEtcher** to flash it to your USB drive.
+2.  Run the installer. It features a user-friendly **Graphical Setup Wizard**.
+3.  Select your USB drive and click **Start Installation**.
+4.  The wizard will automatically download, verify, and reassemble the system image for you.
+5.  Once ready, use **Rufus** or **BalenaEtcher** to flash the resulting `USBian_Restore.img.gz` to your drive.
 
 ---
 
