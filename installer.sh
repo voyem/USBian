@@ -1,18 +1,20 @@
 #!/bin/bash
 # USBian Linux Installer
 set -e
-echo "[1/4] Starting USBian installation..."
-mkdir -p tmp_blocks
-for i in {00..41}; do
-    echo "[INFO] Downloading block $i..."
-    wget -q "https://github.com/voyem/USBian/releases/download/Blocks/debian_part_$i" -O "tmp_blocks/part_$i"
-done
-echo "[2/4] Joining blocks..."
-cat tmp_blocks/part_* > USBian.img.gz
-echo "[3/4] Decompressing..."
-gunzip -f USBian.img.gz
-echo "[4/4] Flashing to drive (WARNING: FINAL STEP)..."
-lsblk
+
+DEBIAN_ISO_URL="https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.10.0-amd64-standard.iso"
+
+echo "[1/3] Downloading Debian Live ISO..."
+wget -q --show-progress "$DEBIAN_ISO_URL" -O USBian.iso
+
+echo "[2/3] Flashing to drive (WARNING: FINAL STEP)..."
+lsblk -o NAME,MODEL,SIZE
 read -p "Enter target USB device (e.g., /dev/sdh): " TARGET
-sudo dd if=USBian.img of=$TARGET bs=4M status=progress conv=fsync
-echo "Installation complete."
+
+if [ ! -b "$TARGET" ]; then
+    echo "ERROR: $TARGET is not a valid block device!"
+    exit 1
+fi
+
+sudo dd if=USBian.iso of=$TARGET bs=4M status=progress conv=fsync
+echo "[3/3] Installation complete!"
