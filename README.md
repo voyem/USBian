@@ -1,5 +1,6 @@
-# Linux = installer.sh
-Windows = installer.go
+# Index 
+- Linux = installer.sh
+- Windows = installer.go
 
 # USBian: Universal Debian Persistence USB
 
