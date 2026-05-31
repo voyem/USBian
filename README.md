@@ -1,3 +1,5 @@
+# Do not use the ps1 installer as it is not digitally signed and your powershell terminal will most likely block the downloads!
+
 # USBian: Universal Debian Persistence USB
 
 This project provides instructions and configuration for creating a "Plug and Play" Debian Linux USB drive with persistence. This allows you to carry a full terminal-ready OS on a USB stick that boots on almost any PC (BIOS or UEFI) and saves your files and settings.
