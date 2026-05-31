@@ -1,3 +1,6 @@
+Linux: installer.sh
+Windows: installer.go
+
 # USBian: Universal Debian Persistence USB
 
 This project provides instructions and configuration for creating a "Plug and Play" Debian Linux USB drive with persistence. This allows you to carry a full terminal-ready OS on a USB stick that boots on almost any PC (BIOS or UEFI) and saves your files and settings.
