@@ -6,7 +6,7 @@
 set -e
 
 # Configuration (Replace with your GitHub details)
-GH_USER="your-github-username"
+GH_USER="voyem"
 GH_REPO="usb-debian-os"
 RELEASE_TAG="v1.0"
 
