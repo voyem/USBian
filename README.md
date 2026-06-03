@@ -1,4 +1,4 @@
-# please don't use this yet, the installer for some reason installed 31gb of empty space and I have no idea how to fix it
+# Everything will be at: https://usbian-project.serveousercontent.com though the server will be on at random times until I find a schedule, also this readme is very outdated
 
 # USBian: Universal Debian Persistence USB
 
